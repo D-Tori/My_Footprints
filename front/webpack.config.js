@@ -24,7 +24,7 @@ module.exports = {
       {
         test: /\.(ts|tsx)$/,
         use: "ts-loader",
-        exclude: /node_modules/,
+        exclude: '/node_modules/',
       },
       {
         test: /\.(js|jsx)$/,  // test : 어떤 파일에 적용할지 확장자 작성
@@ -32,9 +32,9 @@ module.exports = {
         loader: 'babel-loader'  // loader : 적용할 로더가 1개라면 loader로 설정
       },
       {
-        test: /\.css$/,
+        test: /\.(css|scss|sass)$/,
         // use: ['style-loader', 'css-loader'],
-        use: [MiniCssExtractPlugin.loader, 'css-loader']  // use : 적용할 로더가 2개 이상이면 use 배열로 설정
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']  // use : 적용할 로더가 2개 이상이면 use 배열로 설정
       },
       {
         test: /\.(jpeg|jpg)$/,

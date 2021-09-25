@@ -1,5 +1,5 @@
 import React from 'react';
-import './test.css';
+import './test.scss';
 
 const App = () => {
   return <div className='test_container'>
