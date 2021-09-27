@@ -1,12 +1,15 @@
 // @ts-check
-
-const express = require("express");
-
-const app = express();
-
 require("dotenv").config();
 
 const { PORT } = process.env;
+
+const express = require("express");
+
+const mountRoutes = require("./routes");
+
+const app = express();
+
+mountRoutes(app);
 
 app.get("/", (req, res) => {
   res.send("Hello world!");
