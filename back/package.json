@@ -2,7 +2,7 @@
   "name": "back",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon src/main.js"
+    "server": "nodemon src/app.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-promise-router": "^4.1.0",
+    "pg": "^8.7.1"
   }
 }
