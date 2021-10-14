@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cypress:open": "cypress open",
     "test": "jest",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "prettier": "prettier --write --config ./.prettierrc \"./src/**/*.{ts,tsx}\"",
-    "lint": "eslint \"./src/**/*.{ts,tsx}\""  
+    "lint": "eslint \"./src/**/*.{ts,tsx}\""
   },
   "keywords": [],
   "author": "",
@@ -33,6 +34,7 @@
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.3.0",
+    "cypress": "^8.5.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",

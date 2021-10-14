@@ -1,7 +1,7 @@
 /* eslint-disable */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')  // index.html 파일을 dist 폴더에 index_bundle.js 파일과 함께 자동으로 생성
-const { cleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
